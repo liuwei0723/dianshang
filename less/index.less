@@ -1,0 +1,373 @@
+/* 在首页的index.less去导入公共样式文件 */
+
+// @import 'base.less';
+// #header {
+    
+//     display: flex;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100vw;
+//     z-index: 999;
+//     .icon-logo {
+//         width: 80px;
+//         display: block;
+//         height: 45px;
+//         background: url(../images/sprites.png) no-repeat;
+//         padding: 10px 11px;
+//         background-position: 0 -108px;
+//         background-size: 200px 200px;
+//         /* 调整背景图定位原点 参照盒模型的哪个区域  */
+//         background-origin: content-box; // 设置背景图的裁切 裁切掉除了内容区域以外的背景图
+//         background-clip: content-box;
+//     }
+//     form {
+//         flex: 1;
+//         padding-top: 5px;
+//         position: relative;
+//         .icon-search {
+//             position: absolute;
+//             background: url(../images/sprites.png) no-repeat;
+//             background-position: -58px -108px;
+//             background-size: 200px 200px;
+//             top: 12px;
+//             left: 8px;
+//             width: 20px;
+//             height: 20px;
+//         }
+//         input {
+//             width: 100%;
+//             height: 35px;
+//             border-radius: 17.5px;
+//             padding-left: 30px;
+//             font-size: 14px;
+//         }
+//     }
+//     .login {
+//         width: 50px;
+//         height: 45px;
+//         line-height: 45px;
+//         text-align: center;
+//         color: #fff;
+//         font-size: 14px;
+//     }
+// }
+
+// /* 轮播图区域 */
+
+// #slide {
+//     img {
+//         width: 100%;
+//     }
+// }
+
+// //* 导航区域 */
+// #nav {
+//     padding: 10px 0;
+//     ul {
+//         display: flex;
+//         flex-wrap: wrap;
+//         li {
+//             width: 25vw;
+//             a {
+//                 text-align: center;
+//                 display: block;
+//                 img {
+//                     width: 40px;
+//                     height: 40px;
+//                 }
+//                 p {
+//                     margin: 5px 0;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// /* 秒杀 */
+
+// #main {
+//     padding: 10px;
+//     background-color: #eee;
+//     padding-bottom: 60px;
+//     .seckill {
+//         background-color: #fff;
+//         box-shadow: 0 0 1px #666;
+//         .title {
+//             display: flex;
+//             justify-content: space-between;
+//             line-height: 30px;
+//             .title-left {
+//                 display: flex;
+//                 img {
+//                     width: 20px;
+//                     height: 25px;
+//                     margin-left: 5px;
+//                 }
+//                 >span {
+//                     color: @main-color;
+//                     margin-left: 5px;
+//                 }
+//                 .down-time {
+//                     margin-left: 5px;
+//                     span:not(:nth-child(3n)) {
+//                         display: inline-block;
+//                         width: 15px;
+//                         height: 15px;
+//                         text-align: center;
+//                         line-height: 15px;
+//                         color: #fff;
+//                         background-color: #000;
+//                     }
+//                 }
+//             }
+//             .title-right {
+//                 a {
+//                     margin-right: 10px;
+//                 }
+//             }
+//         }
+//         .content {
+//             ul {
+//                 display: flex;
+//                 li {
+//                     flex: 1;
+//                     a {
+//                         display: block;
+//                         text-align: center;
+//                         img {
+//                             width: 110px;
+//                             height: 110px;
+//                         }
+//                         p {
+//                             font-size: 12px;
+//                             span {
+//                                 color: @main-color;
+//                             }
+//                             del {
+//                                 color: #ccc;
+//                             }
+//                         }
+//                     }
+//                     /* 选择第二个li及以后的li设置左边框 */
+//                     & ~ li {
+//                         border-left: 1px solid #ccc;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+//     .jd-market {
+//         box-shadow: 0px 0px 1px #666;
+//         background-color: #fff;
+//         margin-top: 10px;
+//         .title {
+//             border-bottom: 1px solid #ccc;
+//             h4{
+//                 line-height: 30px;
+//                 padding-left: 30px;
+//                 position: relative;
+//                 font-weight: normal;
+//                 &::before {
+//                     content: '';
+//                     position: absolute;
+//                     width: 4px;
+//                     height: 14px;
+//                     background-color: @main-color;
+//                     top: 8px;
+//                     left: 20px;
+//                 }
+//             }
+//         }
+//         .content {
+//             display: flex;
+//             >div {
+//                 flex: 1;
+//                 a {
+//                     display: block;
+//                     img {
+//                         width: 100%;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// /* 底部区域 */
+// #footer {
+//     position: fixed;
+//     left: 0;
+//     bottom: 0px;
+//     z-index: 999;
+//     width: 100%;
+//     background-color: #fff;
+//     ul {
+//         display: flex;
+//         li {
+//             flex: 1;
+//             a{
+//                 display: block;
+//                 text-align: center;
+//                 img {
+//                     width: 65px;
+//                     height: 50px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+
+
+
+
+/* 在首页的index.less去导入公共样式文件 */
+
+@import 'base.less';
+
+
+/* 轮播图区域 */
+
+#slide {
+    img {
+        width: 100%;
+    }
+}
+
+//* 导航区域 */
+#nav {
+    padding: 0.1rem 0;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            width: 25vw;
+            a {
+                text-align: center;
+                display: block;
+                img {
+                    width: 0.4rem;
+                    height: 0.4rem;
+                }
+                p {
+                    margin: 0.05rem 0;
+                }
+            }
+        }
+    }
+}
+
+/* 秒杀 */
+
+#main {
+    padding: 0.1rem;
+    background-color: #eee;
+    padding-bottom: 0.6rem;
+    .seckill {
+        background-color: #fff;
+        box-shadow: 0 0 0.01rem #666;
+        .title {
+            display: flex;
+            justify-content: space-between;
+            line-height: 0.3rem;
+            .title-left {
+                display: flex;
+                img {
+                    width: 0.2rem;
+                    height: 0.25rem;
+                    margin-left: 0.05rem;
+                }
+                >span {
+                    color: @main-color;
+                    margin-left: 0.05rem;
+                }
+                .down-time {
+                    margin-left: 0.05rem;
+                    span:not(:nth-child(3n)) {
+                        display: inline-block;
+                        width: 0.15rem;
+                        height: 0.15rem;
+                        text-align: center;
+                        line-height: 0.15rem;
+                        color: #fff;
+                        background-color: #000;
+                    }
+                }
+            }
+            .title-right {
+                a {
+                    margin-right: 0.1rem;
+                }
+            }
+        }
+        .content {
+            ul {
+                display: flex;
+                li {
+                    flex: 1;
+                    a {
+                        display: block;
+                        text-align: center;
+                        img {
+                            width: 1.1rem;
+                            height: 1.1rem;
+                        }
+                        p {
+                            font-size: 0.12rem;
+                            span {
+                                color: @main-color;
+                            }
+                            del {
+                                color: #ccc;
+                            }
+                        }
+                    }
+                    /* 选择第二个li及以后的li设置左边框 */
+                    & ~ li {
+                        border-left: 0.01rem solid #ccc;
+                    }
+                }
+            }
+        }
+    }
+
+    .jd-market {
+        box-shadow: 0px 0px 0.01rem #666;
+        background-color: #fff;
+        margin-top: 0.1rem;
+        .title {
+            border-bottom: 0.01rem solid #ccc;
+            h4{
+                line-height: 0.3rem;
+                padding-left: 0.3rem;
+                position: relative;
+                font-weight: normal;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 0.04rem;
+                    height: 0.14rem;
+                    background-color: @main-color;
+                    top: 0.08rem;
+                    left: 0.2rem;
+                }
+            }
+        }
+        .content {
+            display: flex;
+            >div {
+                flex: 1;
+                a {
+                    display: block;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+

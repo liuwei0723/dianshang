@@ -1,0 +1,92 @@
+@import 'base.less';
+#header {
+    background-color: #eee;
+}
+
+body {
+    padding: .45rem 0 .5rem;
+    // padding: 45px 0 50px;
+    height: 100vh;
+    // overflow: hidden;
+}
+
+#main {
+    display: flex;
+    height: 100%;
+    .category-left {
+        height: 100%;
+        width: .85rem;
+        .swiper-container {
+            height: 100%;
+            .swiper-slide {
+                height: auto;
+            }
+        }
+        ul {
+            li {
+                a {
+                    display: block;
+                    height: .45rem;
+                    line-height: .45rem;
+                    background-color: #eee;
+                    text-align: center;
+                }
+                &.active {
+                    a {
+                        background-color: #fff;
+                        color: @main-color;
+                    }
+                }
+            }
+        }
+    }
+    .category-right {
+        flex: 1;
+        padding: .07rem;
+        height: 100%;
+        .swiper-container {
+            height: 100%;
+            .swiper-slide {
+                height: 100%;
+            }
+        }
+        /* 设置滚动条的样式 */
+        .swiper-container-vertical>.swiper-scrollbar {
+            width: 3px;
+            background-color: rgba(255, 0, 0, 0.2);
+            right: 0px;
+            .swiper-scrollbar-drag {
+                background-color: hotpink;
+            }
+        }
+        .banner {
+            img {
+                width: 100%;
+            }
+        }
+        #branchList {
+            h4 {
+                line-height: .4rem;
+            }
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    width: 33.33%;
+                    a {
+                        display: block;
+                        text-align: center;
+                        img {
+                            width: .7rem;
+                        }
+                        span {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
